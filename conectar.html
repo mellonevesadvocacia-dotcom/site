@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Conectar WhatsApp</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<style>
+  :root { --azul:#2E4C74; --dourado:#D8B86E; --papel:#FBFAF7; --tinta:#231F1A; --grafite:#5C574D; --linha:#E4DFD3; --ok:#1E7A46; --erro:#A23B2A; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.55 Georgia, "Times New Roman", serif; }
+  main { max-width:640px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { color:var(--azul); font-size:1.6rem; margin:0 0 4px; }
+  .sub { color:var(--grafite); margin:0 0 28px; }
+  ol { padding-left:1.2em; } li { margin-bottom:8px; }
+  .aviso { border-left:4px solid var(--dourado); background:#fff; padding:12px 16px; margin:20px 0; }
+  button { font:600 1rem system-ui, sans-serif; background:var(--azul); color:#fff; border:0; border-radius:8px; padding:14px 22px; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  #saida { margin-top:24px; padding:16px; background:#fff; border:1px solid var(--linha); border-radius:8px; white-space:pre-wrap; font:14px/1.5 ui-monospace, Consolas, monospace; display:none; }
+  .ok { color:var(--ok); } .erro { color:var(--erro); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Conectar o WhatsApp do escritório</h1>
+  <p class="sub">Página interna da Mello &amp; Neves Advogados Associados. Não é destinada ao público.</p>
+
+  <ol>
+    <li>Tenha em mãos o celular com o <strong>WhatsApp Business</strong> do escritório, atualizado.</li>
+    <li>Clique no botão abaixo e entre com o Facebook de quem administra o portfólio <strong>Mello &amp; Neves</strong>.</li>
+    <li>Quando perguntado, escolha <strong>conectar o app WhatsApp Business existente</strong> e o portfólio <strong>Mello &amp; Neves</strong>.</li>
+    <li>Leia o código QR com o celular do escritório e aceite o compartilhamento do histórico.</li>
+  </ol>
+
+  <div class="aviso">O WhatsApp continua funcionando normalmente no celular. Ao final, esta página mostra os números de identificação da conexão.</div>
+
+  <button id="conectar" disabled>Carregando…</button>
+  <div id="saida"></div>
+</main>
+
+<script>
+  var APP_ID = "1868207234183213";
+  var CONFIG_ID = "1183214397367131";
+  var saida = document.getElementById("saida");
+  var botao = document.getElementById("conectar");
+  var resultado = {};
+
+  function mostrar(texto, classe) {
+    saida.style.display = "block";
+    saida.className = classe || "";
+    saida.textContent = texto;
+  }
+
+  // Dados da sessão (IDs da conta e do número) enviados pela janela do cadastro.
+  window.addEventListener("message", function (ev) {
+    if (!/(^|\.)facebook\.com$/.test(new URL(ev.origin).hostname)) return;
+    var d;
+    try { d = JSON.parse(ev.data); } catch (e) { return; }
+    if (!d || d.type !== "WA_EMBEDDED_SIGNUP") return;
+    resultado.evento = d.event;
+    resultado.dados = d.data;
+    if (d.event === "FINISH" || d.event === "FINISH_WHATSAPP_BUSINESS_APP_ONBOARDING" || d.event === "FINISH_ONLY_WABA") {
+      mostrar("Conexão concluída.\n\n" + JSON.stringify(d.data, null, 2) +
+        "\n\nCopie este quadro e envie ao responsável técnico.", "ok");
+    } else if (d.event === "CANCEL") {
+      mostrar("Cadastro interrompido.\n\n" + JSON.stringify(d.data, null, 2), "erro");
+    } else if (d.event === "ERROR") {
+      mostrar("A Meta informou um erro.\n\n" + JSON.stringify(d.data, null, 2), "erro");
+    }
+  });
+
+  window.fbAsyncInit = function () {
+    FB.init({ appId: APP_ID, autoLogAppEvents: true, xfbml: false, version: "v25.0" });
+    botao.disabled = false;
+    botao.textContent = "Conectar o WhatsApp do escritório";
+  };
+
+  botao.addEventListener("click", function () {
+    FB.login(function (resp) {
+      // O código de autorização não é necessário: a conta fica no portfólio do próprio escritório.
+      if (!resp.authResponse && !resultado.evento) {
+        mostrar("A janela foi fechada antes de concluir. Pode tentar de novo.", "erro");
+      }
+    }, {
+      config_id: CONFIG_ID,
+      response_type: "code",
+      override_default_response_type: true,
+      extras: { setup: {}, featureType: "whatsapp_business_app_onboarding", sessionInfoVersion: "3" }
+    });
+  });
+</script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js"></script>
+</body>
+</html>
