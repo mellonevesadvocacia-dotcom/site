@@ -5,113 +5,255 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mello &amp; Neves Advogados Associados</title>
 <meta name="description" content="Mello & Neves Advogados Associados, sociedade de advogados registrada na OAB/GO sob o nº 8.295, sediada em Goiânia, com atendimento online em todo o Brasil. Saúde, previdenciário, BPC/LOAS, família, consumidor, trabalho e cível.">
+<meta name="theme-color" content="#1F3553">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Gelasio&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gelasio:ital@0;1&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <path id="monograma" fill-rule="evenodd" d="M0,0 L139,83 L279,0 L279,26 L139,108 L0,26 Z M0,73 L0,263 L81,217 L81,148 L279,263 L279,73 L191,125 L191,185 Z M22,112 L58,133 L58,203 L22,224 Z M215,138 L256,115 L256,224 L215,201 Z"/>
+  </defs>
+</svg>
+
 <header class="topo">
   <div class="conteudo">
     <a class="marca" href="#inicio" aria-label="Mello & Neves Advogados Associados, início">
-      <svg viewBox="0 0 279 263" aria-hidden="true"><path fill="#E1C58A" fill-rule="evenodd" d="M0,0 L139,83 L279,0 L279,26 L139,108 L0,26 Z M0,73 L0,263 L81,217 L81,148 L279,263 L279,73 L191,125 L191,185 Z M22,112 L58,133 L58,203 L22,224 Z M215,138 L256,115 L256,224 L215,201 Z"/></svg>
+      <svg viewBox="0 0 279 263" aria-hidden="true"><use href="#monograma" fill="#E1C58A"/></svg>
       <div><strong>Mello &amp; Neves</strong><span>Advogados Associados</span></div>
     </a>
     <nav class="menu" aria-label="Seções">
-      <a href="#atuacao">Atuação</a>
+      <a href="#areas">Áreas</a>
       <a href="#informativo">Informativo</a>
       <a href="#perguntas">Dúvidas</a>
       <a href="#equipe">Equipe</a>
-      <a href="#contato">Contato</a>
+      <a class="cta" href="#atendimento">Fale conosco</a>
     </nav>
   </div>
 </header>
 
 <main id="inicio">
   <div class="abertura">
+    <svg class="marca-dagua" viewBox="0 0 279 263" aria-hidden="true"><use href="#monograma" fill="#E1C58A"/></svg>
     <div class="conteudo">
-      <p class="lema">“O direito é a base que sustenta a justiça e garante a harmonia na sociedade.”</p>
-      <h1>Advocacia com atendimento próximo e orientação clara, em todo o Brasil.</h1>
-      <p>Sociedade de advogados registrada na OAB/GO, sediada em Goiânia, com atendimento online para clientes de todo o país. Explicamos cada etapa do seu caso em linguagem simples e acompanhamos você do primeiro contato até o encerramento.</p>
-      <a class="botao" href="https://wa.me/5562982609010">Falar pelo WhatsApp</a>
-      <a class="botao secundario" href="#contato">Endereço e contatos</a>
+      <div>
+        <p class="lema">“O direito é a base que sustenta a justiça e garante a harmonia na sociedade.”</p>
+        <h1>Advocacia próxima, com <em>orientação clara</em>, em todo o Brasil.</h1>
+        <p>Sociedade de advogados registrada na OAB/GO, sediada em Goiânia, com atendimento online para clientes de todo o país. Explicamos cada etapa do seu caso em linguagem simples, do primeiro contato até o encerramento.</p>
+        <div class="botoes">
+          <a class="botao" href="#atendimento">Solicitar atendimento</a>
+          <a class="botao contorno" href="#areas">Conhecer as áreas</a>
+        </div>
+      </div>
+      <aside class="ajuda" aria-label="Escolha o assunto">
+        <h2>Como podemos ajudar?</h2>
+        <p>Escolha o assunto e veja as situações que analisamos.</p>
+        <div class="chips">
+          <button class="chip" type="button" data-abrir="saude">Plano de saúde e SUS</button>
+          <button class="chip" type="button" data-abrir="previdenciario">INSS e aposentadoria</button>
+          <button class="chip" type="button" data-abrir="bpc">BPC/LOAS</button>
+          <button class="chip" type="button" data-abrir="familia">Família</button>
+          <button class="chip" type="button" data-abrir="consumidor">Consumidor</button>
+          <button class="chip" type="button" data-abrir="trabalho">Trabalho</button>
+          <button class="chip" type="button" data-abrir="civel">Cível</button>
+        </div>
+      </aside>
     </div>
   </div>
 
-  <section id="atuacao">
+  <div class="confianca">
     <div class="conteudo">
-      <h2>Áreas de atuação</h2>
-      <p class="intro">Cada caso é analisado individualmente pelos advogados do escritório, a partir dos documentos e da situação concreta.</p>
-      <div class="grade">
-        <article class="cartao">
-          <h3>Direito à saúde</h3>
-          <p>Negativas de planos de saúde, cobertura de tratamentos, cirurgias e medicamentos, e acesso a procedimentos pelo SUS.</p>
-        </article>
-        <article class="cartao">
-          <h3>Direito previdenciário</h3>
-          <p>Benefícios do INSS: auxílio por incapacidade, aposentadorias, pensão por morte e revisões, na via administrativa e judicial.</p>
-        </article>
-        <article class="cartao">
-          <h3>Benefício assistencial (BPC/LOAS)</h3>
-          <p>Pedido do benefício para pessoa idosa ou com deficiência, organização da documentação e ação judicial em caso de indeferimento.</p>
-        </article>
-        <article class="cartao">
-          <h3>Família e sucessões</h3>
-          <p>Divórcio, guarda, pensão alimentícia, união estável, inventário e partilha de bens.</p>
-        </article>
-        <article class="cartao">
-          <h3>Direito do consumidor</h3>
-          <p>Cobranças indevidas, negativação, problemas com bancos, produtos, serviços e companhias aéreas.</p>
-        </article>
-        <article class="cartao">
-          <h3>Direito do trabalho</h3>
-          <p>Verbas rescisórias, horas extras, reconhecimento de vínculo e demais direitos do trabalhador.</p>
-        </article>
-        <article class="cartao">
-          <h3>Direito civil</h3>
-          <p>Contratos, cobranças, indenizações por danos materiais e morais e demais questões cíveis.</p>
-        </article>
-        <article class="cartao">
-          <h3>Outras demandas</h3>
-          <p>Se o seu assunto não está nesta lista, fale com a equipe. Informamos se o escritório pode atender o seu caso.</p>
-        </article>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><span><b>Registrada na OAB/GO</b>Sociedade nº 8.295</span></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span><b>Atendimento online</b>Para clientes de todo o Brasil</span></div>
+      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><span><b>Sigilo e LGPD</b>Seus dados protegidos</span></div>
+    </div>
+  </div>
+
+  <section id="areas" class="creme">
+    <div class="conteudo">
+      <span class="rotulo">Áreas de atuação</span>
+      <h2>Escolha uma área e veja como podemos ajudar</h2>
+      <p class="intro">Clique em uma área para ver as situações que o escritório analisa, curiosidades sobre os seus direitos e as matérias do Informativo.</p>
+
+      <div class="areas">
+        <ul class="lista-areas">
+          <li><button class="area-btn" type="button" aria-expanded="false" aria-controls="area-saude" data-area="saude"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.2 12h5.3l1.5-3 3 6 1.5-3h6.3"/></svg></span>Direito à saúde<span class="seta" aria-hidden="true">›</span></button></li>
+          <li><button class="area-btn" type="button" aria-expanded="false" aria-controls="area-previdenciario" data-area="previdenciario"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>Previdenciário (INSS)<span class="seta" aria-hidden="true">›</span></button></li>
+          <li><button class="area-btn" type="button" aria-expanded="false" aria-controls="area-bpc" data-area="bpc"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v12M15 9.5c0-1.4-1.3-2.5-3-2.5s-3 1.1-3 2.5 1.3 2 3 2.5 3 1.1 3 2.5-1.3 2.5-3 2.5-3-1.1-3-2.5"/></svg></span>BPC/LOAS<span class="seta" aria-hidden="true">›</span></button></li>
+          <li><button class="area-btn" type="button" aria-expanded="false" aria-controls="area-familia" data-area="familia"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>Família e sucessões<span class="seta" aria-hidden="true">›</span></button></li>
+          <li><button class="area-btn" type="button" aria-expanded="false" aria-controls="area-consumidor" data-area="consumidor"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="21" r="1"/><circle cx="19" cy="21" r="1"/><path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"/></svg></span>Direito do consumidor<span class="seta" aria-hidden="true">›</span></button></li>
+          <li><button class="area-btn" type="button" aria-expanded="false" aria-controls="area-trabalho" data-area="trabalho"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></span>Direito do trabalho<span class="seta" aria-hidden="true">›</span></button></li>
+          <li><button class="area-btn" type="button" aria-expanded="false" aria-controls="area-civel" data-area="civel"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10M12 3v18M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg></span>Direito civil<span class="seta" aria-hidden="true">›</span></button></li>
+        </ul>
+
+        <div class="paineis">
+          <div class="painel" id="area-saude" hidden>
+            <h3>Direito à saúde</h3>
+            <p class="desc">Planos de saúde e SUS: quando o tratamento indicado pelo médico é negado, atrasado ou cobrado de forma abusiva.</p>
+            <h4>Situações que analisamos</h4>
+            <ul class="situacoes">
+              <li>Negativa de cirurgia, exame ou internação</li>
+              <li>Tratamentos e medicamentos de alto custo</li>
+              <li>Home care e terapias contínuas</li>
+              <li>Reajustes abusivos da mensalidade</li>
+              <li>Cancelamento do plano pela operadora</li>
+              <li>Medicamentos e procedimentos pelo SUS</li>
+            </ul>
+            <h4>Você sabia?</h4>
+            <p class="sabia">Em casos de <strong>urgência e emergência</strong>, a carência máxima do plano é de 24 horas.<small>Lei 9.656/1998, art. 12, V, “c”</small></p>
+            <p class="sabia">Nos planos contratados a partir de 2004, <strong>não há reajuste por mudança de faixa etária depois dos 59 anos</strong>.<small>Estatuto da Pessoa Idosa, art. 15, § 3º, e normas da ANS</small></p>
+            <h4>Leia no Informativo</h4>
+            <div class="ler-mais"><a href="artigos/plano-de-saude-negou.html">O plano de saúde negou cobertura. E agora? →</a></div>
+            <div class="acoes"><button class="botao" type="button" data-atender="Direito à saúde">Quero atendimento sobre esta área</button><span class="obs">Resposta pelo WhatsApp do escritório</span></div>
+          </div>
+
+          <div class="painel" id="area-previdenciario" hidden>
+            <h3>Previdenciário (INSS)</h3>
+            <p class="desc">Benefícios de quem contribui ou contribuiu para o INSS, do pedido administrativo à ação judicial.</p>
+            <h4>Situações que analisamos</h4>
+            <ul class="situacoes">
+              <li>Aposentadorias: por idade, tempo, especial e da pessoa com deficiência</li>
+              <li>Auxílio por incapacidade (antigo auxílio-doença)</li>
+              <li>Aposentadoria por incapacidade permanente</li>
+              <li>Auxílio-acidente</li>
+              <li>Pensão por morte</li>
+              <li>Salário-maternidade</li>
+              <li>Revisão de benefícios</li>
+              <li>Benefício negado ou cortado</li>
+            </ul>
+            <h4>Você sabia?</h4>
+            <p class="sabia">O prazo para pedir a <strong>revisão</strong> de um benefício concedido é, em regra, de <strong>10 anos</strong>.<small>Lei 8.213/1991, art. 103</small></p>
+            <p class="sabia">O <strong>auxílio-acidente</strong> não exige número mínimo de contribuições (carência).<small>Lei 8.213/1991, art. 26, I</small></p>
+            <h4>Leia no Informativo</h4>
+            <div class="ler-mais"><a href="artigos/auxilio-por-incapacidade.html">Auxílio por incapacidade: o antigo auxílio-doença →</a></div>
+            <div class="acoes"><button class="botao" type="button" data-atender="Previdenciário (INSS)">Quero atendimento sobre esta área</button><span class="obs">Resposta pelo WhatsApp do escritório</span></div>
+          </div>
+
+          <div class="painel" id="area-bpc" hidden>
+            <h3>BPC/LOAS</h3>
+            <p class="desc">Benefício de um salário mínimo por mês para a pessoa idosa ou com deficiência em situação de baixa renda.</p>
+            <h4>Situações que analisamos</h4>
+            <ul class="situacoes">
+              <li>Pessoa com 65 anos ou mais</li>
+              <li>Pessoa com deficiência, de qualquer idade</li>
+              <li>Crianças com deficiência, inclusive com autismo (TEA)</li>
+              <li>Pedido negado pelo INSS</li>
+              <li>Benefício suspenso ou cortado na revisão</li>
+              <li>Organização do CadÚnico e da documentação</li>
+            </ul>
+            <h4>Você sabia?</h4>
+            <p class="sabia">O BPC <strong>não exige</strong> que a pessoa tenha contribuído para o INSS.<small>Lei 8.742/1993 (LOAS), art. 20</small></p>
+            <p class="sabia">A pessoa com <strong>transtorno do espectro autista</strong> é considerada pessoa com deficiência para todos os efeitos legais.<small>Lei 12.764/2012, art. 1º, § 2º</small></p>
+            <h4>Leia no Informativo</h4>
+            <div class="ler-mais"><a href="artigos/bpc-loas-quem-tem-direito.html">BPC/LOAS: quem tem direito ao benefício →</a></div>
+            <div class="acoes"><button class="botao" type="button" data-atender="BPC/LOAS">Quero atendimento sobre esta área</button><span class="obs">Resposta pelo WhatsApp do escritório</span></div>
+          </div>
+
+          <div class="painel" id="area-familia" hidden>
+            <h3>Família e sucessões</h3>
+            <p class="desc">Questões familiares tratadas com cuidado e discrição, buscando sempre que possível a solução consensual.</p>
+            <h4>Situações que analisamos</h4>
+            <ul class="situacoes">
+              <li>Divórcio e dissolução de união estável</li>
+              <li>Guarda e convivência com os filhos</li>
+              <li>Pensão alimentícia: pedido, revisão e cobrança</li>
+              <li>Reconhecimento de união estável</li>
+              <li>Investigação de paternidade</li>
+              <li>Inventário e partilha de bens</li>
+            </ul>
+            <h4>Você sabia?</h4>
+            <p class="sabia">A pensão alimentícia pode ser <strong>revista</strong> para mais ou para menos quando muda a situação de quem paga ou de quem recebe.<small>Código Civil, art. 1.699</small></p>
+            <p class="sabia">O inventário deve ser aberto em até <strong>2 meses</strong> do falecimento; o atraso pode gerar multa no imposto estadual.<small>Código de Processo Civil, art. 611</small></p>
+            <div class="acoes"><button class="botao" type="button" data-atender="Família e sucessões">Quero atendimento sobre esta área</button><span class="obs">Resposta pelo WhatsApp do escritório</span></div>
+          </div>
+
+          <div class="painel" id="area-consumidor" hidden>
+            <h3>Direito do consumidor</h3>
+            <p class="desc">Problemas com empresas, bancos e prestadores de serviço nas relações de consumo do dia a dia.</p>
+            <h4>Situações que analisamos</h4>
+            <ul class="situacoes">
+              <li>Cobranças indevidas</li>
+              <li>Nome negativado sem motivo</li>
+              <li>Descontos e empréstimos não contratados</li>
+              <li>Voos atrasados, cancelados e bagagem extraviada</li>
+              <li>Produto com defeito ou não entregue</li>
+              <li>Serviços mal prestados</li>
+            </ul>
+            <h4>Você sabia?</h4>
+            <p class="sabia">Quem compra pela internet ou por telefone pode <strong>desistir em até 7 dias</strong> do recebimento, sem justificar.<small>Código de Defesa do Consumidor, art. 49</small></p>
+            <p class="sabia">Quem paga uma cobrança indevida tem direito a receber <strong>o dobro</strong> do valor pago a mais, salvo engano justificável.<small>Código de Defesa do Consumidor, art. 42</small></p>
+            <div class="acoes"><button class="botao" type="button" data-atender="Direito do consumidor">Quero atendimento sobre esta área</button><span class="obs">Resposta pelo WhatsApp do escritório</span></div>
+          </div>
+
+          <div class="painel" id="area-trabalho" hidden>
+            <h3>Direito do trabalho</h3>
+            <p class="desc">Direitos de quem trabalha ou trabalhou com ou sem carteira assinada.</p>
+            <h4>Situações que analisamos</h4>
+            <ul class="situacoes">
+              <li>Verbas rescisórias não pagas</li>
+              <li>Horas extras e adicional noturno</li>
+              <li>Trabalho sem carteira assinada</li>
+              <li>FGTS não depositado</li>
+              <li>Acidente e doença do trabalho</li>
+              <li>Assédio moral</li>
+            </ul>
+            <h4>Você sabia?</h4>
+            <p class="sabia">Ao fim do contrato, a empresa tem <strong>10 dias</strong> para pagar as verbas rescisórias.<small>CLT, art. 477, § 6º</small></p>
+            <p class="sabia">O prazo para entrar com ação trabalhista é de <strong>2 anos</strong> após a saída, cobrando os últimos 5 anos.<small>Constituição Federal, art. 7º, XXIX</small></p>
+            <div class="acoes"><button class="botao" type="button" data-atender="Direito do trabalho">Quero atendimento sobre esta área</button><span class="obs">Resposta pelo WhatsApp do escritório</span></div>
+          </div>
+
+          <div class="painel" id="area-civel" hidden>
+            <h3>Direito civil</h3>
+            <p class="desc">Contratos, dívidas, indenizações e outras questões entre pessoas e empresas.</p>
+            <h4>Situações que analisamos</h4>
+            <ul class="situacoes">
+              <li>Contratos: elaboração, revisão e descumprimento</li>
+              <li>Indenização por danos materiais e morais</li>
+              <li>Acidentes de trânsito</li>
+              <li>Cobranças e dívidas</li>
+              <li>Aluguel e despejo</li>
+              <li>Conflitos de vizinhança</li>
+            </ul>
+            <h4>Você sabia?</h4>
+            <p class="sabia">O prazo para pedir <strong>indenização</strong> por danos é, em regra, de <strong>3 anos</strong>.<small>Código Civil, art. 206, § 3º, V</small></p>
+            <p class="sabia">A cobrança de dívida baseada em documento escrito prescreve, em regra, em <strong>5 anos</strong>.<small>Código Civil, art. 206, § 5º, I</small></p>
+            <div class="acoes"><button class="botao" type="button" data-atender="Direito civil">Quero atendimento sobre esta área</button><span class="obs">Resposta pelo WhatsApp do escritório</span></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="atendimento">
+  <section id="informativo" class="claro">
     <div class="conteudo">
-      <h2>Como funciona o atendimento</h2>
-      <p class="intro">O primeiro contato pode ser feito pelo WhatsApp do escritório. Nenhuma orientação jurídica é dada antes da análise de um advogado.</p>
-      <ol class="passos">
-        <li><strong>Primeiro contato</strong>Pelo WhatsApp, um assistente virtual registra seus dados e um breve relato do caso.</li>
-        <li><strong>Análise da equipe</strong>Os advogados avaliam o relato e entram em contato para agendar a consulta.</li>
-        <li><strong>Consulta online</strong>Por videochamada: conversa com o advogado, análise dos documentos e explicação dos caminhos possíveis.</li>
-        <li><strong>Acompanhamento</strong>Contratado o serviço, você recebe informações sobre cada andamento do caso.</li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="informativo">
-    <div class="conteudo">
-      <h2>Informativo</h2>
-      <p class="intro">Matérias em linguagem simples sobre direitos do dia a dia. Conteúdo informativo, que não substitui a análise de um advogado sobre o seu caso.</p>
+      <span class="rotulo">Informativo</span>
+      <h2>Seus direitos em linguagem simples</h2>
+      <p class="intro">Matérias informativas sobre situações comuns. Não substituem a análise de um advogado sobre o seu caso.</p>
+      <div class="filtros" role="group" aria-label="Filtrar matérias por área">
+        <button class="filtro" type="button" aria-pressed="true" data-filtro="todas">Todas</button>
+        <button class="filtro" type="button" aria-pressed="false" data-filtro="saude">Saúde</button>
+        <button class="filtro" type="button" aria-pressed="false" data-filtro="previdenciario">Previdenciário</button>
+        <button class="filtro" type="button" aria-pressed="false" data-filtro="bpc">BPC/LOAS</button>
+      </div>
       <div class="materias">
-        <article class="materia">
+        <article class="materia" data-area="saude">
           <span class="tema">Direito à saúde</span>
           <h3><a href="artigos/plano-de-saude-negou.html">O plano de saúde negou cobertura. E agora?</a></h3>
           <p>O que pedir à operadora, quando a carência não vale e quais caminhos existem depois da negativa.</p>
           <a class="ler" href="artigos/plano-de-saude-negou.html">Ler matéria →</a>
         </article>
-        <article class="materia">
-          <span class="tema">Assistência social</span>
+        <article class="materia" data-area="bpc">
+          <span class="tema">BPC/LOAS</span>
           <h3><a href="artigos/bpc-loas-quem-tem-direito.html">BPC/LOAS: quem tem direito ao benefício</a></h3>
           <p>Os requisitos do benefício de um salário mínimo para pessoa idosa ou com deficiência, e o que fazer se ele for negado.</p>
           <a class="ler" href="artigos/bpc-loas-quem-tem-direito.html">Ler matéria →</a>
         </article>
-        <article class="materia">
+        <article class="materia" data-area="previdenciario">
           <span class="tema">Previdenciário</span>
           <h3><a href="artigos/auxilio-por-incapacidade.html">Auxílio por incapacidade: o antigo auxílio-doença</a></h3>
           <p>Quem pode receber, quantas contribuições são exigidas e o que fazer quando a perícia nega o benefício.</p>
@@ -121,91 +263,118 @@
     </div>
   </section>
 
-  <section class="saber">
+  <section id="como-funciona" class="creme">
     <div class="conteudo">
-      <h2>Você sabia?</h2>
-      <div class="grade">
-        <div class="cartao"><p>Quem compra pela internet ou por telefone pode desistir em até <strong>7 dias</strong> do recebimento, sem precisar justificar.</p><span class="fonte">Código de Defesa do Consumidor, art. 49</span></div>
-        <div class="cartao"><p>Quem paga uma cobrança indevida tem direito a receber de volta <strong>o dobro</strong> do valor pago a mais, com correção, salvo engano justificável.</p><span class="fonte">Código de Defesa do Consumidor, art. 42</span></div>
-        <div class="cartao"><p>Ao fim do contrato de trabalho, a empresa tem <strong>10 dias</strong> para pagar as verbas rescisórias.</p><span class="fonte">CLT, art. 477, § 6º</span></div>
-        <div class="cartao"><p>O prazo para entrar com ação trabalhista é de <strong>2 anos</strong> após a saída da empresa, cobrando os últimos 5 anos.</p><span class="fonte">Constituição Federal, art. 7º, XXIX</span></div>
-        <div class="cartao"><p>Em casos de <strong>urgência e emergência</strong>, a carência máxima do plano de saúde é de 24 horas.</p><span class="fonte">Lei 9.656/1998, art. 12, V, “c”</span></div>
-        <div class="cartao"><p>O <strong>BPC/LOAS</strong> não exige que a pessoa tenha contribuído para o INSS.</p><span class="fonte">Lei 8.742/1993 (LOAS), art. 20</span></div>
+      <span class="rotulo">Atendimento</span>
+      <h2>Como funciona</h2>
+      <p class="intro">Todo o atendimento pode ser feito online. Nenhuma orientação jurídica é dada antes da análise de um advogado.</p>
+      <ol class="passos">
+        <li><strong>Primeiro contato</strong>Pelo formulário ou pelo WhatsApp, um assistente virtual registra seus dados e um breve relato.</li>
+        <li><strong>Análise da equipe</strong>Os advogados avaliam o relato e entram em contato para agendar a consulta.</li>
+        <li><strong>Consulta online</strong>Por videochamada: conversa com o advogado, análise dos documentos e explicação dos caminhos possíveis.</li>
+        <li><strong>Acompanhamento</strong>Contratado o serviço, você recebe informações sobre cada andamento do caso.</li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="perguntas" class="claro faq">
+    <div class="conteudo duas">
+      <div>
+        <span class="rotulo">Dúvidas</span>
+        <h2>Perguntas frequentes</h2>
+        <p class="intro">Tem uma dúvida sobre algum direito? Envie pelo formulário. As perguntas mais comuns viram matérias do Informativo, respondidas de forma geral e sem identificar ninguém.</p>
+        <a class="botao" href="#atendimento" data-tipo="duvida">Enviar uma dúvida</a>
+      </div>
+      <div>
+        <details>
+          <summary>Vocês atendem fora de Goiânia?</summary>
+          <p>Sim. O atendimento é online, por WhatsApp e videochamada, para clientes de todo o Brasil. Processos eletrônicos permitem atuar em qualquer estado.</p>
+        </details>
+        <details>
+          <summary>Como funciona a consulta online?</summary>
+          <p>Depois do primeiro contato, a equipe agenda uma videochamada. Você conversa com o advogado, envia os documentos e recebe a explicação dos caminhos possíveis para o seu caso.</p>
+        </details>
+        <details>
+          <summary>Quais documentos devo separar?</summary>
+          <p>Depende do assunto. No primeiro contato pelo WhatsApp, o assistente virtual informa a lista de documentos mais importantes para o seu tipo de caso.</p>
+        </details>
+        <details>
+          <summary>O assistente virtual dá orientação jurídica?</summary>
+          <p>Não. Ele só registra seus dados e um breve relato para a equipe. Toda orientação é dada por um advogado, depois de analisar o seu caso. Você pode pedir a qualquer momento para falar com uma pessoa.</p>
+        </details>
+        <details>
+          <summary>Quanto custa?</summary>
+          <p>Os honorários dependem do tipo de caso e são informados pela equipe depois da análise, de forma clara e por escrito, observando a tabela da OAB/GO.</p>
+        </details>
+        <details>
+          <summary>Vocês respondem dúvidas sobre o meu caso pelo site?</summary>
+          <p>Não. Pelo Código de Ética da OAB, não respondemos publicamente a casos individuais. As dúvidas enviadas viram conteúdo geral; o seu caso é analisado de forma reservada, no atendimento.</p>
+        </details>
+        <details>
+          <summary>Meus dados ficam protegidos?</summary>
+          <p>Sim. Tudo o que você nos conta é protegido pelo sigilo profissional da advocacia e pela LGPD. Veja a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+        </details>
       </div>
     </div>
   </section>
 
-  <section id="perguntas" class="faq">
+  <section id="equipe" class="creme">
     <div class="conteudo">
-      <h2>Perguntas frequentes</h2>
-      <details>
-        <summary>Vocês atendem fora de Goiânia?</summary>
-        <p>Sim. O atendimento é online, por WhatsApp e videochamada, para clientes de todo o Brasil. Processos eletrônicos permitem atuar em qualquer estado.</p>
-      </details>
-      <details>
-        <summary>Como funciona a consulta online?</summary>
-        <p>Depois do primeiro contato pelo WhatsApp, a equipe agenda uma videochamada. Você conversa com o advogado, envia os documentos e recebe a explicação dos caminhos possíveis para o seu caso.</p>
-      </details>
-      <details>
-        <summary>Quais documentos devo separar?</summary>
-        <p>Depende do assunto. No primeiro contato pelo WhatsApp, o assistente virtual informa a lista de documentos mais importantes para o seu tipo de caso.</p>
-      </details>
-      <details>
-        <summary>O assistente virtual do WhatsApp dá orientação jurídica?</summary>
-        <p>Não. Ele só registra seus dados e um breve relato para a equipe. Toda orientação é dada por um advogado, depois de analisar o seu caso. Você pode pedir a qualquer momento para falar com uma pessoa.</p>
-      </details>
-      <details>
-        <summary>Quanto custa?</summary>
-        <p>Os honorários dependem do tipo de caso e são informados pela equipe depois da análise, de forma clara e por escrito, observando a tabela da OAB/GO.</p>
-      </details>
-      <details>
-        <summary>Meus dados ficam protegidos?</summary>
-        <p>Sim. Tudo o que você nos conta é protegido pelo sigilo profissional da advocacia e pela LGPD. Veja a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
-      </details>
-    </div>
-  </section>
-
-  <section class="duvida">
-    <div class="conteudo">
-      <h2>Envie sua dúvida</h2>
-      <p>Tem uma pergunta sobre algum direito? Mande para nós. As dúvidas mais comuns viram matérias do Informativo, respondidas de forma geral e <strong>sem identificar ninguém</strong>.</p>
-      <p>Se a dúvida for sobre a sua situação específica, a equipe analisa o seu caso pelo WhatsApp.</p>
-      <a class="botao" href="https://wa.me/5562982609010?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20para%20o%20Informativo%20do%20site%3A%20">Enviar dúvida pelo WhatsApp</a>
-      <p class="aviso">Não respondemos publicamente a casos individuais, conforme o Código de Ética e Disciplina da OAB.</p>
-    </div>
-  </section>
-
-  <section id="equipe" class="equipe">
-    <div class="conteudo">
-      <h2>Equipe</h2>
+      <span class="rotulo">Equipe</span>
+      <h2>Quem cuida do seu caso</h2>
       <div class="grade">
-        <article class="cartao">
-          <h3>Dra. Maria Luiza Lima das Neves</h3>
-          <p class="oab">Advogada · OAB/GO 72.099 · Sócia</p>
+        <article class="cartao pessoa">
+          <span class="inicial" aria-hidden="true">ML</span>
+          <div><h3>Dra. Maria Luiza Lima das Neves</h3><p class="oab">Advogada · OAB/GO 72.099 · Sócia</p></div>
         </article>
-        <article class="cartao">
-          <h3>Dr. Matheus Henrique de Mello Rios</h3>
-          <p class="oab">Advogado · OAB/GO 74.060 · Sócio</p>
+        <article class="cartao pessoa">
+          <span class="inicial" aria-hidden="true">MH</span>
+          <div><h3>Dr. Matheus Henrique de Mello Rios</h3><p class="oab">Advogado · OAB/GO 74.060 · Sócio</p></div>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="contato">
-    <div class="conteudo">
-      <h2>Contato</h2>
-      <div class="grade">
-        <address class="contato-dados cartao">
-          <span><b>WhatsApp e telefone:</b> <a href="https://wa.me/5562982609010">(62) 98260-9010</a></span>
-          <span><b>E-mail:</b> <a href="mailto:mellonevesadvocacia@gmail.com">mellonevesadvocacia@gmail.com</a></span>
-          <span><b>Instagram:</b> <a href="https://www.instagram.com/mello.neves_adv/">@mello.neves_adv</a></span>
-        </address>
-        <address class="contato-dados cartao">
-          <span><b>Endereço:</b> Rua 72, nº 223, Qd. C16, Lt. 0, Sala 1507</span>
-          <span>Jardim Goiás · Goiânia/GO · CEP 74805-480</span>
-          <span><b>Atendimento:</b> online, para todo o Brasil</span>
-        </address>
+  <section id="atendimento" class="atendimento">
+    <div class="conteudo duas">
+      <div>
+        <span class="rotulo">Fale conosco</span>
+        <h2>Solicite atendimento</h2>
+        <p class="intro">Preencha o formulário: a mensagem é aberta no seu WhatsApp, já escrita, para você enviar ao escritório. Se preferir, fale direto pelos contatos abaixo.</p>
+        <div class="contato-lista">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.5 7.4L3 21l2.2-5.3A8.5 8.5 0 1 1 21 11.5Z"/></svg><span><b>WhatsApp</b><a href="https://wa.me/5562982609010">(62) 98260-9010</a></span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg><span><b>E-mail</b><a href="mailto:mellonevesadvocacia@gmail.com">mellonevesadvocacia@gmail.com</a></span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".5"/></svg><span><b>Instagram</b><a href="https://www.instagram.com/mello.neves_adv/">@mello.neves_adv</a></span></div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg><span><b>Sede</b>Rua 72, nº 223, Qd. C16, Lt. 0, Sala 1507 · Jardim Goiás · Goiânia/GO · CEP 74805-480</span></div>
+        </div>
       </div>
+
+      <form class="form" id="form-atendimento" novalidate>
+        <fieldset>
+          <legend>O que você precisa?</legend>
+          <label class="opcao"><input type="radio" name="tipo" value="atendimento" checked> Atendimento para o meu caso</label>
+          <label class="opcao"><input type="radio" name="tipo" value="duvida"> Dúvida para o Informativo</label>
+        </fieldset>
+        <div class="linha2">
+          <label>Nome<input name="nome" autocomplete="name" required></label>
+          <label>Cidade/UF<input name="cidade" autocomplete="address-level2" placeholder="Ex.: Goiânia/GO"></label>
+        </div>
+        <label>Área
+          <select name="area">
+            <option value="">Não sei / outra</option>
+            <option>Direito à saúde</option>
+            <option>Previdenciário (INSS)</option>
+            <option>BPC/LOAS</option>
+            <option>Família e sucessões</option>
+            <option>Direito do consumidor</option>
+            <option>Direito do trabalho</option>
+            <option>Direito civil</option>
+          </select>
+        </label>
+        <label><span id="rotulo-relato">Conte brevemente o que aconteceu</span><textarea name="relato" placeholder="Sem detalhes pessoais: a equipe pedirá o que for necessário."></textarea></label>
+        <button class="botao" type="submit">Enviar pelo WhatsApp</button>
+        <p class="nota-form">O site não guarda nenhum dado: a mensagem vai direto para o WhatsApp do escritório. Veja a <a href="privacidade.html">Política de Privacidade</a>.</p>
+      </form>
     </div>
   </section>
 </main>
@@ -218,5 +387,92 @@
   </div>
 </footer>
 
+<script>
+(function () {
+  var WHATS = "5562982609010";
+  var celular = window.matchMedia("(max-width: 900px)");
+  var paineis = document.querySelector(".paineis");
+  var botoes = Array.prototype.slice.call(document.querySelectorAll(".area-btn"));
+
+  function posicionar(btn, painel) {
+    if (celular.matches) btn.parentNode.appendChild(painel);
+    else paineis.appendChild(painel);
+  }
+  function abrir(area, alternar) {
+    botoes.forEach(function (b) {
+      var p = document.getElementById(b.getAttribute("aria-controls"));
+      var este = b.dataset.area === area;
+      var aberto = este && !(alternar && celular.matches && b.getAttribute("aria-expanded") === "true");
+      b.setAttribute("aria-expanded", aberto ? "true" : "false");
+      p.hidden = !aberto;
+      if (aberto) posicionar(b, p);
+    });
+  }
+  botoes.forEach(function (b) { b.addEventListener("click", function () { abrir(b.dataset.area, true); }); });
+  celular.addEventListener("change", function () {
+    var ativo = document.querySelector('.area-btn[aria-expanded="true"]');
+    if (ativo) posicionar(ativo, document.getElementById(ativo.getAttribute("aria-controls")));
+    else if (!celular.matches) abrir("saude");
+  });
+  if (!celular.matches) abrir("saude");
+
+  document.querySelectorAll("[data-abrir]").forEach(function (c) {
+    c.addEventListener("click", function () {
+      abrir(c.dataset.abrir);
+      var alvo = celular.matches ? document.querySelector('.area-btn[data-area="' + c.dataset.abrir + '"]') : document.getElementById("areas");
+      alvo.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  });
+
+  // Filtro do Informativo
+  var filtros = document.querySelectorAll(".filtro");
+  filtros.forEach(function (f) {
+    f.addEventListener("click", function () {
+      filtros.forEach(function (x) { x.setAttribute("aria-pressed", x === f ? "true" : "false"); });
+      document.querySelectorAll(".materia").forEach(function (m) {
+        m.hidden = !(f.dataset.filtro === "todas" || m.dataset.area === f.dataset.filtro);
+      });
+    });
+  });
+
+  // Formulário → mensagem pronta no WhatsApp (nada é guardado no site)
+  var form = document.getElementById("form-atendimento");
+  var rotulo = document.getElementById("rotulo-relato");
+  function tipo(v) {
+    if (v) form.querySelector('input[name="tipo"][value="' + v + '"]').checked = true;
+    var duvida = form.tipo.value === "duvida";
+    rotulo.textContent = duvida ? "Qual é a sua dúvida?" : "Conte brevemente o que aconteceu";
+  }
+  form.querySelectorAll('input[name="tipo"]').forEach(function (r) { r.addEventListener("change", function () { tipo(); }); });
+  document.querySelectorAll("[data-atender]").forEach(function (b) {
+    b.addEventListener("click", function () {
+      form.area.value = b.dataset.atender;
+      tipo("atendimento");
+      document.getElementById("atendimento").scrollIntoView({ behavior: "smooth" });
+      setTimeout(function () { form.nome.focus({ preventScroll: true }); }, 500);
+    });
+  });
+  document.querySelectorAll('[data-tipo="duvida"]').forEach(function (b) { b.addEventListener("click", function () { tipo("duvida"); }); });
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    var nome = form.nome.value.trim();
+    if (!nome) { form.nome.focus(); form.nome.setAttribute("aria-invalid", "true"); return; }
+    form.nome.removeAttribute("aria-invalid");
+    var linhas;
+    if (form.tipo.value === "duvida") {
+      linhas = ["Tenho uma dúvida para o Informativo do site: " + (form.relato.value.trim() || "(escreva aqui)"),
+                "Nome: " + nome];
+      if (form.area.value) linhas.push("Área: " + form.area.value);
+    } else {
+      linhas = ["Olá! Vim pelo site e gostaria de atendimento.", "Nome: " + nome];
+      if (form.cidade.value.trim()) linhas.push("Cidade: " + form.cidade.value.trim());
+      linhas.push("Área: " + (form.area.value || "não sei / outra"));
+      if (form.relato.value.trim()) linhas.push("Resumo: " + form.relato.value.trim());
+    }
+    window.open("https://wa.me/" + WHATS + "?text=" + encodeURIComponent(linhas.join("\n")), "_blank", "noopener");
+  });
+})();
+</script>
 </body>
 </html>
